@@ -21,8 +21,8 @@ public interface AnotherFakeApiDelegate {
      * @see AnotherFakeApi#testSpecialTags
      */
     default ResponseEntity<Client> testSpecialTags(Client body) {
-    // do some magic!
-    return new ResponseEntity<Client>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<Client>(HttpStatus.NOT_IMPLEMENTED);
     }
 
 }

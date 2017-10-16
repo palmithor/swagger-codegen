@@ -25,40 +25,40 @@ public interface FakeApiDelegate {
      * @see FakeApi#fakeOuterBooleanSerialize
      */
     default ResponseEntity<Boolean> fakeOuterBooleanSerialize(Boolean body) {
-    // do some magic!
-    return new ResponseEntity<Boolean>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<Boolean>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     /**
      * @see FakeApi#fakeOuterCompositeSerialize
      */
     default ResponseEntity<OuterComposite> fakeOuterCompositeSerialize(OuterComposite body) {
-    // do some magic!
-    return new ResponseEntity<OuterComposite>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<OuterComposite>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     /**
      * @see FakeApi#fakeOuterNumberSerialize
      */
     default ResponseEntity<BigDecimal> fakeOuterNumberSerialize(BigDecimal body) {
-    // do some magic!
-    return new ResponseEntity<BigDecimal>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<BigDecimal>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     /**
      * @see FakeApi#fakeOuterStringSerialize
      */
     default ResponseEntity<String> fakeOuterStringSerialize(String body) {
-    // do some magic!
-    return new ResponseEntity<String>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<String>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     /**
      * @see FakeApi#testClientModel
      */
     default ResponseEntity<Client> testClientModel(Client body) {
-    // do some magic!
-    return new ResponseEntity<Client>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<Client>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     /**
@@ -78,8 +78,8 @@ public interface FakeApiDelegate {
         OffsetDateTime dateTime,
         String password,
         String paramCallback) {
-    // do some magic!
-    return new ResponseEntity<Void>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     /**
@@ -93,8 +93,8 @@ public interface FakeApiDelegate {
         String enumQueryString,
         Integer enumQueryInteger,
         Double enumQueryDouble) {
-    // do some magic!
-    return new ResponseEntity<Void>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     /**
@@ -102,8 +102,8 @@ public interface FakeApiDelegate {
      */
     default ResponseEntity<Void> testJsonFormData(String param,
         String param2) {
-    // do some magic!
-    return new ResponseEntity<Void>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
 }

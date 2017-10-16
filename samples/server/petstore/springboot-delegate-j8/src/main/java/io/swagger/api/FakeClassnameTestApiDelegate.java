@@ -21,8 +21,8 @@ public interface FakeClassnameTestApiDelegate {
      * @see FakeClassnameTestApi#testClassname
      */
     default ResponseEntity<Client> testClassname(Client body) {
-    // do some magic!
-    return new ResponseEntity<Client>(HttpStatus.OK);
+        // do some magic!
+        return new ResponseEntity<Client>(HttpStatus.NOT_IMPLEMENTED);
     }
 
 }
